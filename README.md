@@ -26,11 +26,12 @@ Acceptance Criteria:
 
   - [ ] 2.1 User can manage only his own tasks
 
-  2.2 Task has next attributes
-    - [ ] title
-    - [ ] description
-    - [ ] priority
-    - [ ] due date
+  - 2.2 Task has next attributes
+    - [x] title
+    - [x] description
+    - [x] priority
+    - [x] due date
+    - [x] status *
 
   - [ ] 2.3 Basicaly there should be two lists, one is active tasks, another one is completed. By marking task as completed a particular task moves to appropriate list.
 
