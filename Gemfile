@@ -14,6 +14,7 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'slim-rails'
 
 gem 'metamagic'
+gem 'devise'
 
 group :production do
   gem 'rails_12factor'

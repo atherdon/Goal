@@ -1,0 +1,27 @@
+section.section
+  .container
+    .space
+    .row
+      = devise_error_messages!
+      .col-md-6.col-sm-7
+        = form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'icon', role: "form") do |f|
+          .row            
+            .form-group.col-lg-6
+              .control
+                = f.text_field :first_name, autofocus: true, placeholder: "First name", class: 'form-control'
+            .form-group.col-lg-6
+              .control
+                = f.text_field :last_name, autofocus: true, placeholder: "Last name", class: 'form-control'
+          .form-group
+            .control
+              = f.email_field :email, placeholder: "Email", class: 'form-control'
+          .form-group
+            .control
+              = f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'form-control'
+          .form-group
+            .control
+              = f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password confirmation", class: 'form-control'
+          .form-group
+            = f.submit "Sign up", class: "btn btn-success fa fa-check"
+        ' or
+        = render "devise/shared/links"      

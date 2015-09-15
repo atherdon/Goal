@@ -1,0 +1,20 @@
+section.section
+  .container
+    .space
+      .row
+        .col-md-6.col-sm-7
+          /! Contact Form
+          = form_for(resource, as: resource_name, url: session_path(resource_name), class: 'form-horizontal icon', role: "form") do |f|
+            .form-group.col-sm-12
+              .control
+                = f.email_field :email, class: 'form-control', autofocus: true, placeholder: "Email"
+            .form-group.col-sm-12
+              .control
+                = f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'form-control'
+            .form-group.col-sm-12
+              / i.fa.fa-chevron-circle-right
+              => f.submit "Log in", class: "btn btn-primary"
+              span.text-muted
+                ' or
+              = link_to "Sign up", new_user_registration_path, class: 'text-nowrap'
+          .space.visible-xs

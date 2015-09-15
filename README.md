@@ -4,16 +4,16 @@ Acceptance Criteria:
 ====================
 
 1 Authentication system. User should be able to:
-  - [ ] sign up
-  - [ ] sign in
-  - [ ] sign out
+  - [x] sign up
+  - [x] sign in
+  - [x] sign out
 
   - 1.1 User has next attributes:
-    - [ ] first name
-    - [ ] last name
-    - [ ] email
+    - [x] first name
+    - [x] last name
+    - [x] email
 
-  - [ ] 1.2 User receives email with activation link after sign up
+  - [x] 1.2 User receives email with activation link after sign up
 
 2 Home page. User should be able to:
   - [ ] view all tasks (the list of all tasks that belong to user, display only title)
