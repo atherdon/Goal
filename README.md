@@ -26,7 +26,7 @@ Acceptance Criteria:
 
   - [ ] 2.1 User can manage only his own tasks
 
-  2.2 Task has next attributes:
+  2.2 Task has next attributes
     - [ ] title
     - [ ] description
     - [ ] priority
