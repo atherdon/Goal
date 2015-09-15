@@ -56,12 +56,12 @@ Acceptance Criteria:
 
 - [ ] 6 User should be able to sort the list on the Home page by title
 
-- [ ] 7 User twitter bootstrap for nice UI
+- [x] 7 User twitter bootstrap for nice UI
 
 - [ ] 8 Few tests with Rspec (e.g. add a method `full name` to user model and add tests for it, add tests for validation rules)
 
 - [ ] 9 Try to use Ajax wherever it is possible (e.g. delete task on the home page), minimum page reloads
 
-- [ ] 10 use github to host the code, use heroku to deploy the app
+- [x] 10 use github to host the code, use heroku to deploy the app
 
-- [ ] 11 Decide yourself what will be better to use gems or not. It's up to you.
+- [x] 11 Decide yourself what will be better to use gems or not. It's up to you.
