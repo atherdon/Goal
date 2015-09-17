@@ -24,8 +24,6 @@ class TasksController < ApplicationController
     respond_with(@task)
   end
 
-  # PATCH/PUT /tasks/1
-  # PATCH/PUT /tasks/1.json
   def update
     if @task.update(task_params)
       flash[:notice] = 'Task was successfully updated.'      
@@ -33,8 +31,6 @@ class TasksController < ApplicationController
     respond_with(@task)
   end
 
-  # DELETE /tasks/1
-  # DELETE /tasks/1.json
   def destroy
     @task.destroy
     respond_with(@task, location: tasks_url)    

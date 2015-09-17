@@ -16,7 +16,7 @@ Acceptance Criteria:
   - [x] 1.2 User receives email with activation link after sign up
 
 2 Home page. User should be able to:
-  - [ ] view all tasks (the list of all tasks that belong to user, display only title)
+  - [x] view all tasks (the list of all tasks that belong to user, display only title)
   - [ ] by mousing hover a particular task the "edit" and "delete" links should appear next to the title
   - [ ] create new task
   - [ ] edit existing task
@@ -24,7 +24,7 @@ Acceptance Criteria:
   - [ ] mark task as completed
   - [ ] make it active again if task is completed
 
-  - [ ] 2.1 User can manage only his own tasks
+  - [x] 2.1 User can manage only his own tasks
 
   - 2.2 Task has next attributes
     - [x] title
