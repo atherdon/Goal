@@ -8,11 +8,20 @@ nav#navbarSettings.navbar.navbar-default.navbar-fixed-top role="navigation"
         span.icon-bar
         span.icon-bar
       = link_to "#", class: 'navbar-brand' do
-        ' Simple
-        span.text-primary Shop
+        ' To
+        span.text-primary Do
     #bs-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li.dropdown
           = link_to "Home", "#"
         li.dropdown
           = link_to "About", "#"
+        li.dropdown
+          - if current_user            
+            = link_to destroy_user_session_path, method: :delete do
+              i.fa.fa-sign-out>
+              | Log out
+          - else
+            = link_to new_user_session_path do
+              i.fa.fa-sign-in>
+              | Log in
