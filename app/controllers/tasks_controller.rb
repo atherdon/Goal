@@ -3,7 +3,11 @@ class TasksController < ApplicationController
   respond_to :html, :js
  
   def index
-    @tasks = current_user.tasks.page(params[:page])
+    if params[:q]
+      @tasks = get_tasks.search(params[:q])
+    else
+      @tasks = get_tasks
+    end
   end
 
   def show
@@ -42,6 +46,10 @@ class TasksController < ApplicationController
       @task = current_user.tasks.find(params[:id])
       rescue ActiveRecord::RecordNotFound
         redirect_to root_path, notice: "Wrong params"
+    end
+
+    def get_tasks
+      current_user.tasks.page(params[:page])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

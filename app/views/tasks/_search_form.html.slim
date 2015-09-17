@@ -1,0 +1,12 @@
+= form_tag(tasks_path, method: "get", role: "form", enforce_utf8: false, remote: true) do |f|
+  .form-group
+    .control
+      = text_field_tag :q, 
+        params[:q], 
+        class: 'form-control', 
+        placeholder: "Title:"
+  hr
+  .row.text-center.inline
+    .form-group.col-lg-6
+      = submit_tag 'Search', class: "btn btn-block btn-primary", name: nil do
+        i.fa.fa-search

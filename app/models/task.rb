@@ -16,4 +16,13 @@ class Task < ActiveRecord::Base
   enum status: [ :active, :completed ]
 
   belongs_to :user
+
+  def self.search(query)
+    if query.blank?
+      all
+    else
+      q = "%#{query}%"
+      where("title ilike ?", q)
+    end
+  end
 end
