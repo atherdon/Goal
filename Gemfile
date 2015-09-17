@@ -15,6 +15,7 @@ gem 'slim-rails'
 
 gem 'metamagic'
 gem 'devise'
+gem 'kaminari'
 
 group :production do
   gem 'rails_12factor'

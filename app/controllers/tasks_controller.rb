@@ -1,9 +1,9 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
-  respond_to :html
+  respond_to :html, :js
  
   def index
-    @tasks = current_user.tasks
+    @tasks = current_user.tasks.page(params[:page])
   end
 
   def show

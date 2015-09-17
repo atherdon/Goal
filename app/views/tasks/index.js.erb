@@ -1,0 +1,2 @@
+$('#content').html('<%= escape_javascript render('tasks', locals:{tasks: @tasks}) %>');
+$('#paginator').html('<%= escape_javascript(paginate(@tasks, remote: true).to_s) %>');     
