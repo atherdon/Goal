@@ -18,9 +18,9 @@ Acceptance Criteria:
 2 Home page. User should be able to:
   - [x] view all tasks (the list of all tasks that belong to user, display only title)
   - [ ] by mousing hover a particular task the "edit" and "delete" links should appear next to the title
-  - [ ] create new task
-  - [ ] edit existing task
-  - [ ] delete existing task
+  - [x] create new task
+  - [x] edit existing task
+  - [x] delete existing task
   - [ ] mark task as completed
   - [ ] make it active again if task is completed
 
@@ -40,13 +40,13 @@ Acceptance Criteria:
    - [ ]  here display all the attributes of the task
 
 4 Edit task page
-  - [ ]  by clicking "edit" link on the Home page user is taken to this page
-  - [ ]  this page displays a form with task's data
-  - [ ]  user should be able to edit any attribute
-  - [ ]  validation rules should be applied
-  - [ ] title can't be blank
-  - [ ] priority should be a number
-  - [ ] due date should be a future date
+  - [x]  by clicking "edit" link on the Home page user is taken to this page
+  - [x]  this page displays a form with task's data
+  - [x]  user should be able to edit any attribute
+  - [x]  validation rules should be applied
+  - [x] title can't be blank
+  - [x] priority should be a number
+  - [x] due date should be a future date
   - [ ] nice to have if there are client side validation as well
 
   - [ ] 4.1 use datepicker for date input

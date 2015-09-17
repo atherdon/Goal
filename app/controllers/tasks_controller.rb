@@ -1,12 +1,11 @@
 class TasksController < ApplicationController
+  before_action :get_tasks, only: [:index, :create, :update, :destroy]
   before_action :set_task, only: [:show, :edit, :update, :destroy]
   respond_to :html, :js
  
   def index
     if params[:q]
       @tasks = get_tasks.search(params[:q])
-    else
-      @tasks = get_tasks
     end
   end
 
@@ -15,6 +14,7 @@ class TasksController < ApplicationController
 
   def new
     @task = current_user.tasks.new
+    render 'edit'
   end
 
   def edit
@@ -23,21 +23,20 @@ class TasksController < ApplicationController
   def create
     @task = current_user.tasks.build(task_params)
     if @task.save
-      flash[:notice] = 'Task was successfully created.'      
+      flash.now[:notice]  = 'Task was successfully created.'      
     end
-    respond_with(@task)
+    render 'update'
   end
 
   def update
     if @task.update(task_params)
-      flash[:notice] = 'Task was successfully updated.'      
+      flash.now[:notice] = 'Task was successfully updated.'      
     end
-    respond_with(@task)
   end
 
   def destroy
     @task.destroy
-    respond_with(@task, location: tasks_url)    
+    render 'index'  
   end
 
   private
@@ -49,7 +48,7 @@ class TasksController < ApplicationController
     end
 
     def get_tasks
-      current_user.tasks.page(params[:page])
+      @tasks = current_user.tasks.page(params[:page])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

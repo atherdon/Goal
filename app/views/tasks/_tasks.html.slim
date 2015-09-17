@@ -2,4 +2,6 @@
   .row
     h3
       => link_to task.title, task
+    => link_to "Edit", edit_task_path(task), remote: true
+    => link_to "Delete", task, method: :delete, data: { confirm: 'Are you sure?' }, remote: true      
     hr
