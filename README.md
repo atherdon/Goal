@@ -4,13 +4,10 @@ Acceptance Criteria:
 ====================
 
 1 Authentication system. User should be able to:
-  - [x] sign up
-  - [x] sign in
-  - [x] sign out
+  - [x] sign up/in/out
 
   - 1.1 User has next attributes:
-    - [x] first name
-    - [x] last name
+    - [x] full name(first name, last name)
     - [x] email
 
   - [x] 1.2 User receives email with activation link after sign up
@@ -21,8 +18,8 @@ Acceptance Criteria:
   - [x] create new task
   - [x] edit existing task
   - [x] delete existing task
-  - [ ] mark task as completed
-  - [ ] make it active again if task is completed
+  - [x] mark task as completed
+  - [x] make it active again if task is completed
 
   - [x] 2.1 User can manage only his own tasks
 
@@ -59,9 +56,9 @@ Acceptance Criteria:
 
 - [x] 7 User twitter bootstrap for nice UI
 
-- [ ] 8 Few tests with Rspec (e.g. add a method `full name` to user model and add tests for it, add tests for validation rules)
+- [x] 8 Few tests with Rspec (e.g. add a method `full name` to user model and add tests for it, add tests for validation rules)
 
-- [ ] 9 Try to use Ajax wherever it is possible (e.g. delete task on the home page), minimum page reloads
+- [x] 9 Try to use Ajax wherever it is possible (e.g. delete task on the home page), minimum page reloads
 
 - [x] 10 use github to host the code, use heroku to deploy the app
 
